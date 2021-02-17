@@ -24,10 +24,12 @@ class AltairGuilds {
           this.guilds = [];
           for (const row of rows) {
             const guildObj = global.Client.guilds.cache.get(row.id);
-            guildObj.autobans = row.autobans;
-            guildObj.staff_main_role = row.staff_main_role;
-            guildObj.logging = row.logging === null ? null : global.Client.channels.cache.get(row.logging);
-            this.guilds.push(guildObj);
+            if (typeof guildObj !== 'undefined') {
+              guildObj.autobans = row.autobans;
+              guildObj.staff_main_role = row.staff_main_role;
+              guildObj.logging = row.logging === null ? null : global.Client.channels.cache.get(row.logging);
+              this.guilds.push(guildObj);
+            }
           }
           resolve(this);
         }
