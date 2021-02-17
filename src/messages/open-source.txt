@@ -1,0 +1,3 @@
+We are using several open source assets for this project. For a exhaustive list of dependencies please visit our GitHub repository [here](https://github.com/TheCrazyMaffin/Altair)
+ - [discord.js](https://github.com/discordjs/discord.js)
+ - Icons from [material.io](https://material.io/resources/icons/?style=outline)

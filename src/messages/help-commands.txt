@@ -1,0 +1,18 @@
+_Commands without prefix_
+
+**User commands** - Anyone may use those
+`ping` - Pong!
+`help` - Shows this message
+
+**Moderator commands** - Requires `BAN_MEMBERS`
+`autoban [yes|no]` - Enables/Disables autobans. 
+`logging [channel|none]` - Set the channel you want to use as logging channel. 
+`info [userId]` - Get info about the ban of a user.
+`report [userId] [Reason + Evidence]` - Report someone. To attach more information use the command multiple times.
+`cleanup` - Bans everyone on the ban list.
+
+**Bot staff commands** - Whitelist only
+`ban [userId]` - Show someone the door.
+`claim [userId]` - Claim a ban as yours.
+`reason [userId]` - Update the reason for a ban.
+`notify [message]` - Notify all servers with notifications enabled.
