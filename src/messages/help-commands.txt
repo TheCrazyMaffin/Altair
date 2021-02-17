@@ -16,3 +16,4 @@ _Commands without prefix_
 `claim [userId]` - Claim a ban as yours.
 `reason [userId]` - Update the reason for a ban.
 `notify [message]` - Notify all servers with notifications enabled.
+`close` - To be used in a report channel to close the report tied to it.
