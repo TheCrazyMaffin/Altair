@@ -21,6 +21,7 @@ module.exports = class {
           const dest = await global.Client.users.fetch(usr[0]);
           const dmChan = await dest.createDM();
           await dmChan.send(`[Staff message] ${message.content.split(' ').slice(1).join(' ').replace(usr[0], '')}\n\n_You cannot reply to this message. If this message is related to a report you made feel free to append information to your report by using the report command again._`, { split: true });
+          message.react('✅');
         } catch (error) {
           message.reply(`❗ I was unable to create a dm for this user (\`${error.message}\`)`);
         }
