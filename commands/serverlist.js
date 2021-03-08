@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const Discord = require('discord.js');
 const AltairGuilds = require('../src/js/guilds');
 
@@ -12,7 +13,6 @@ module.exports = class {
    */
   async run(message) {
     if (message.staff) {
-      const query = message.content.split(' ')[1];
       const guilds = await (new AltairGuilds()).fetchGuilds();
       let txt = '**Name | Autobans | Logging**\n';
       for (const guild of guilds.guilds) {

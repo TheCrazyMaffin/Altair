@@ -18,9 +18,9 @@ module.exports = class {
         } else if (typeof row === 'undefined') {
           message.channel.send('❗ This channel is not a report channel');
         } else {
-          Database.run('DELETE FROM reports WHERE channel=?', [message.channel.id], (err) => {
-            if (err !== null) {
-              throw err;
+          Database.run('DELETE FROM reports WHERE channel=?', [message.channel.id], (errShadow) => {
+            if (errShadow !== null) {
+              throw errShadow;
             }
           });
           message.channel.delete();
