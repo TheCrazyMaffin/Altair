@@ -9,7 +9,8 @@ module.exports = class {
     if (message.staff) {
       const ban = new AltairBan(message.content.split(' ')[1]);
       await ban.ban();
-      await ban.update(message.content.split(' ').slice(2).join(' '));
+      const reason = message.content.split(' ').slice(2).join(' ');
+      if (reason.length.trim() > 0) await ban.update(reason);
       message.react('✅');
     } else {
       message.channel.send('🔐 You cannot use this command');
