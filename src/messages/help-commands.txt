@@ -12,7 +12,7 @@ _Commands without prefix_
 `cleanup` - Bans everyone on the ban list.
 
 **Bot staff commands** - Whitelist only
-`ban [userId]` - Show someone the door.
+`ban [userId] [reason]` - Show someone the door. Optionally include a reason.
 `claim [userId]` - Claim a ban as yours.
 `reason [userId]` - Update the reason for a ban.
 `notify [message]` - Notify all servers with notifications enabled.
